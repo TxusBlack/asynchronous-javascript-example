@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "module": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/TxusBlack/asynchronous-javascript-example/issues"
   },
-  "homepage": "https://github.com/TxusBlack/asynchronous-javascript-example#readme"
+  "homepage": "https://github.com/TxusBlack/asynchronous-javascript-example#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "esm": "^3.2.25"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
